@@ -1,5 +1,6 @@
 package mc.solidhorizons.extraction;
 
+import mc.solidhorizons.extraction.items.ModItemGroups;
 import mc.solidhorizons.extraction.items.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -16,7 +17,9 @@ public class Extraction implements ModInitializer {
 
 		LOGGER.info("loading " + MOD_ID);
 
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
+
 
 	}
 }
