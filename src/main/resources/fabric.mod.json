@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "extraction",
+	"version": "${version}",
+	"name": "Extraction",
+	"description": "tarko[b]",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/extraction/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"mc.solidhorizons.extraction.Extraction"
+		],
+		"fabric-datagen": [
+			"mc.solidhorizons.extraction.ExtractionDataGenerator"
+		]
+	},
+	"mixins": [
+		"extraction.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
