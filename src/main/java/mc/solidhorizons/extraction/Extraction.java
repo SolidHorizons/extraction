@@ -1,5 +1,6 @@
 package mc.solidhorizons.extraction;
 
+import mc.solidhorizons.extraction.items.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -12,10 +13,10 @@ public class Extraction implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!" + MOD_ID);
+		LOGGER.info("loading " + MOD_ID);
+
+		ModItems.registerModItems();
+
 	}
 }
