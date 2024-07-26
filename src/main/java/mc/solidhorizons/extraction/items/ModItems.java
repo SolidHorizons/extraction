@@ -12,7 +12,12 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
+    //added items ------------------------
+
     public static final Item PROPITAL = registerItem("propital_injector", new Item(new FabricItemSettings()) );
+
+
+    //item functions ------------------------
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries){
         entries.add(PROPITAL);

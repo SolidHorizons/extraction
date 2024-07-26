@@ -1,5 +1,11 @@
 {
+
+ "itemgroup.extraction": "Extraction Items",
+
+
  "item.extraction.propital_injector": "Propital injector",
 
- "itemgroup.extraction": "Extraction Items"
+
+ "block.extraction.rusted_ore": "Rusted ore"
+
 }
